@@ -15,17 +15,6 @@
     <input id="submit" type="submit">
   </form>
   <p><em>Note: this demo works best with Chrome or Firefox. Check <a href="http://afarkas.github.io/webshim/demos/#Forms-forms" target="_blank">Webshim for a polyfill</a>.</em></p>
-  <script>
-    var puppyInput = document.querySelector('#puppy-input');
-    var submit = document.querySelector('#submit');
-
-    submit.onclick = function () {
-      if (puppyInput.value !== "puppy") {
-        puppyInput.setCustomValidity("The input should say 'puppy'. You typed: '" + puppyInput.value + "'");
-      } else {
-        puppyInput.setCustomValidity("");
-      }
-    };
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>
